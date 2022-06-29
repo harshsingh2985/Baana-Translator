@@ -2,12 +2,14 @@ var input=document.querySelector("#submitbtn");
 var text=document.querySelector("#txt-inputs")
 var output=document.querySelector("#outputdiv");
 
-var url="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+// var url="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+var url="https://api.funtranslations.com/translate/minion.json"
 
 function geturl(text){
-    return "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"+"?"+"text="+text;
-
+    return url+"?"+"text="+text;
 }
+
+
 
 function eventhandler(){
     // console.log('clicked');
