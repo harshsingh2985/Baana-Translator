@@ -9,7 +9,10 @@ function geturl(text){
     return url+"?"+"text="+text;
 }
 
-
+function errorhandling(error){
+    console.log("error has been occured",error);
+    alert("")
+}
 
 function eventhandler(){
     // console.log('clicked');
@@ -19,10 +22,16 @@ function eventhandler(){
     // calling server for processing
     fetch(geturl(txtinput))
     .then(Response=>Response.json())
-    .then(json=>console.log(json.contents.translated));
+    .then(json=>{
+        var translatedtext=json.contents.translated;
+        output.innerText=translatedtext;
+    })
+    
+       
 
 
 }
+
 
 
 input.addEventListener("click",eventhandler)
