@@ -1,11 +1,14 @@
 var input=document.querySelector("#submitbtn");
 var text=document.querySelector("#txt-inputs")
+var output=document.querySelector("#outputdiv");
+
 
 function eventhandler(){
     // console.log('clicked');
     var txtinput=text.value;
-    
-    console.log("clicked",txtinput);
+    output.innerText="translated"+txtinput;
+
+
 
         
 }
