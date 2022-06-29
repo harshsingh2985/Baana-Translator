@@ -8,9 +8,7 @@ function eventhandler(){
     var txtinput=text.value;
     output.innerText="translated"+txtinput;
 
-
-
-        
+    
 }
 
 
